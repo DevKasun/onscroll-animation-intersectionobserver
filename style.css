@@ -92,7 +92,7 @@ section .image img {
   margin: auto;
   position: relative;
   max-height: 80%;
-  left: -100%;
+  right: -100%;
   transition: all 1s ease;
 }
 section .image .animated-mail-image {
@@ -113,11 +113,10 @@ section:nth-child(even) {
   background-image: url("./img/bg-right.svg");
 }
 section:nth-child(even) .image img {
-  right: -100%;
-  transition: all 1s ease;
+  left: -100%;
 }
 section:nth-child(even).show .image img {
-  right: 0%;
+  left: 0%;
 }
 section.show .content .animated-vr-image {
   opacity: 1;
@@ -126,7 +125,7 @@ section.show .content .animated-mail-image {
   opacity: 1;
 }
 section.show .image img {
-  left: 0%;
+  right: 0%;
 }
 
 @-webkit-keyframes floating-image {
